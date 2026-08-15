@@ -111,12 +111,33 @@ git checkout main
 - ✅ Bugs corrigidos (BUG_REPORT_ATUALIZADO.md)
 - ✅ Integração Jira configurada (Ticket KAN-1)
 - ✅ Documentação Confluence disponível
+- 🔄 Integração Slack/Teams configurada (ver GUIA_SLACK_TEAMS.md)
 
 ### Rust
 - ✅ Funcional e testado
 - ✅ Migração completa de Quarkus
 - ✅ Estrutura modular (lib.rs + main.rs)
 - ✅ Testes automatizados
+
+## 🤖 Integração com Devin
+
+### Workflows Suportados
+
+**Discussão de Bugs via Slack/Teams:**
+```
+@devin Encontrei um problema no endpoint /hello do projeto Quarkus.
+Ao executar curl http://localhost:8080/hello, recebo timeout.
+```
+
+Veja [GUIA_SLACK_TEAMS.md](GUIA_SLACK_TEAMS.md) para configuração completa e exemplos de uso.
+
+**Delegação via Aplicativo Web:**
+- Delegar tarefas complexas através da interface web
+- Assumir no IDE do Devin quando tiver um bom primeiro rascunho
+
+**Devin para Terminal Local:**
+- Executar correções rápidas e exploração de código
+- Usar `/handoff` para enviar tarefas longas ao Devin na nuvem
 
 ## 📝 Notas
 
