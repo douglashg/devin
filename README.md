@@ -111,7 +111,6 @@ git checkout main
 - ✅ Bugs corrigidos (BUG_REPORT_ATUALIZADO.md)
 - ✅ Integração Jira configurada (Ticket KAN-1)
 - ✅ Documentação Confluence disponível
-- 🔄 Integração Slack/Teams configurada (ver GUIA_SLACK_TEAMS.md)
 
 ### Rust
 - ✅ Funcional e testado
