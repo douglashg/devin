@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Moderno - Interface Elegante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2d2d44 0%, #3d3d5c 50%, #2d2d44 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(45, 45, 68, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            border-radius: 24px;
+            padding: 60px 50px;
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #ffffff;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .content {
+            color: #ffffff;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .content h2 {
+            color: #ffffff;
+            font-size: 1.8em;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .content li::before {
+            content: '✓';
+            position: absolute;
+            left: -25px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .design-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .design-item {
+            background: linear-gradient(135deg, rgba(45, 45, 68, 0.9) 0%, rgba(30, 30, 50, 0.95) 100%);
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .design-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.2);
+        }
+
+        .design-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .design-title {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .design-desc {
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px -5px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px -5px rgba(102, 126, 234, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .design-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">🎨</div>
+            <h1>Design Moderno</h1>
+            <p class="subtitle">Interface elegante e atualizada</p>
+        </div>
+
+        <div class="content">
+            <p>Nosso design foi cuidadosamente criado para proporcionar uma experiência visual agradável e funcional, combinando estética moderna com usabilidade excepcional.</p>
+
+            <h2>Princípios do nosso design</h2>
+            <ul>
+                <li>Minimalismo elegante com foco no conteúdo essencial</li>
+                <li>Paleta de cores harmoniosa e profissional</li>
+                <li>Tipografia moderna e legível em todos os dispositivos</li>
+                <li>Espaçamento adequado para respiração visual</li>
+                <li>Animações sutis que melhoram a experiência do usuário</li>
+            </ul>
+
+            <h2>Elementos de design</h2>
+            <div class="design-showcase">
+                <div class="design-item">
+                    <div class="design-icon">🎯</div>
+                    <div class="design-title">Foco no Usuário</div>
+                    <div class="design-desc">Cada elemento foi pensado para facilitar sua vida</div>
+                </div>
+                <div class="design-item">
+                    <div class="design-icon">📱</div>
+                    <div class="design-title">Responsivo</div>
+                    <div class="design-desc">Perfeito em qualquer dispositivo ou tamanho de tela</div>
+                </div>
+                <div class="design-item">
+                    <div class="design-icon">♿</div>
+                    <div class="design-title">Acessível</div>
+                    <div class="design-desc">Design inclusivo para todos os usuários</div>
+                </div>
+                <div class="design-item">
+                    <div class="design-icon">🔄</div>
+                    <div class="design-title">Consistente</div>
+                    <div class="design-desc">Linguagem visual uniforme em toda a plataforma</div>
+                </div>
+            </div>
+
+            <h2>Atualização contínua</h2>
+            <p>Nosso time de design está constantemente analisando tendências e feedback dos usuários para manter nossa interface sempre atualizada e alinhada com as melhores práticas do mercado.</p>
+
+            <p>Utilizamos as mais recentes tecnologias de design, incluindo CSS moderno, animações fluidas e princípios de UX/UI que garantem uma experiência visual superior.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="boas_vindas.html" class="back-button">← Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
