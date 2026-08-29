@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intuitivo - Fácil de Usar e Aprender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2d2d44 0%, #3d3d5c 50%, #2d2d44 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(45, 45, 68, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            border-radius: 24px;
+            padding: 60px 50px;
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #ffffff;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .content {
+            color: #ffffff;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .content h2 {
+            color: #ffffff;
+            font-size: 1.8em;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        .content li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .content li::before {
+            content: '✓';
+            position: absolute;
+            left: -25px;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .step {
+            background: linear-gradient(135deg, rgba(45, 45, 68, 0.9) 0%, rgba(30, 30, 50, 0.95) 100%);
+            padding: 25px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.2);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .step-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .step-title {
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px -5px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px -5px rgba(102, 126, 234, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">💡</div>
+            <h1>Intuitivo</h1>
+            <p class="subtitle">Fácil de usar e aprender</p>
+        </div>
+
+        <div class="content">
+            <p>Nossa plataforma foi projetada pensando na simplicidade. Mesmo se você nunca usou um sistema similar, será capaz de navegar e utilizar todas as funcionalidades em minutos.</p>
+
+            <h2>Como é fácil começar</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">👆</div>
+                    <div class="step-title">Toque e Clique</div>
+                    <div class="step-desc">Interface natural com gestos intuitivos</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🎯</div>
+                    <div class="step-title">Descubra</div>
+                    <div class="step-desc">Funcionalidades fáceis de encontrar</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">⚡</div>
+                    <div class="step-title">Use</div>
+                    <div class="step-desc">Execute tarefas sem complicações</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🎉</div>
+                    <div class="step-title">Conquiste</div>
+                    <div class="step-desc">Resultados rápidos e satisfatórios</div>
+                </div>
+            </div>
+
+            <h2>Características intuitivas</h2>
+            <ul>
+                <li>Ícones claros e reconhecíveis para cada função</li>
+                <li>Fluxos de trabalho simples e diretos</li>
+                <li>Dicas contextuais quando necessário</li>
+                <li>Organização lógica de menus e opções</li>
+                <li>Feedback visual imediato para cada ação</li>
+                <li>Atalhos inteligentes para usuários avançados</li>
+            </ul>
+
+            <h2>Aprendizado sem esforço</h2>
+            <p>Não precisa de manuais extensos ou treinamentos complicados. Nossa interface é autoexplicativa, guiando você naturalmente através de cada processo.</p>
+
+            <p>Realizamos testes contínuos com usuários reais para garantir que cada elemento da interface seja compreensível e acessível, independentemente do seu nível de experiência tecnológica.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="boas_vindas.html" class="back-button">← Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
